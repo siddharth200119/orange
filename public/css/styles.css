@@ -1,0 +1,110 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#homeProSection{
+    background-color: #000000;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+.homeSectionImage{
+    height: 55%;
+    width: auto;
+}
+
+.homeSectionImageDiv{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 90vh;
+}
+
+.homeProSectionTitle{
+    text-align: center;
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2rem;
+}
+
+.homeProSectionTitle h1{
+    font-size: 3rem;
+    margin-bottom: 0.7rem;
+}
+
+.homeProSectionTitle h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.homeProSectionTitle a{
+    font-size: 1.4rem;
+    font-weight: 200;
+    margin: 0;
+    color: #1d69b3;
+    text-decoration: none;
+}
+
+.homeProSectionTitle a:hover{
+    text-decoration: underline;
+}
+
+.homeProSectionLinks{
+    display: flex;
+    justify-content: space-between;
+}
+
+#homeNormalSection{
+    background-color: #fbfbfd;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+.homeNormalSectionTitle{
+    text-align: center;
+    position: absolute;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2rem;
+}
+
+.homeNormalSectionTitle h1{
+    font-size: 3rem;
+    margin-bottom: 0.7rem;
+}
+
+.homeNormalSectionTitle h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.homeNormalSectionTitle a{
+    font-size: 1.4rem;
+    font-weight: 200;
+    margin: 0;
+    color: #1d69b3;
+    text-decoration: none;
+}
+
+.homeNormalSectionTitle a:hover{
+    text-decoration: underline;
+}
+
+#festiveOffer{
+    background-image: linear-gradient(#000124, #743c75);
+    height: 85vh
+}
+
+.card{
+    height: 50vh;
+    width: 40vw;
+    background-color: black;
+}
