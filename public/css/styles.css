@@ -27,7 +27,7 @@ body{
     position: absolute;
     color: white;
     font-family: 'Roboto', sans-serif;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .homeProSectionTitle h1{
@@ -104,13 +104,68 @@ body{
     text-decoration: underline;
 }
 
-#festiveOffer{
-    background-image: linear-gradient(#000124, #743c75);
-    height: 85vh
+.cardCustom{
+    height: 65vh;
+    width: 48vw;
+    background-color: black;
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
-.card{
-    height: 50vh;
-    width: 40vw;
-    background-color: black;
+.cardSectionTitle{
+    text-align: center;
+    position: absolute;
+    color: #fbfbfd;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cardSectionTitle h1{
+    font-size: 2.8rem;
+    margin-bottom: 0.7rem;
+}
+
+.cardSectionTitle h3{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.cardSectionTitle a{
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin: 0;
+    color: #1d69b3;
+    text-decoration: none;
+}
+
+.cardSectionTitle a:hover{
+    text-decoration: underline;
+}
+
+.cardSectionLinks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardImage{
+    height: 65%;
+    width: auto;
+}
+
+.cardImageDiv{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 65vh;
+}
+
+#watchSection{
+    background-color: #fbfbfd;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
 }

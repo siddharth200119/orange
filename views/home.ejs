@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Titan+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 
@@ -46,13 +47,29 @@
         <div class="homeSectionImageDiv"><img class="homeSectionImage" src="images/iPhone-normal.png" alt=""></div>
     </section>
 
-    <!-- Festive Offer section -->
+    <!-- Watch -->
 
-    <section id="festiveOffer">
-        <h1>hel</h1>
+    <section id="watchSection">
+        <div class="homeNormalSectionTitle">
+            <h1>Watch Pro</h1>
+            <h3>Track Workout Like a Pro</h3>
+            <div class="homeNormalSectionLinks">
+                <a style="margin-left: 2.5rem;" href="/iPhoneNormal">Learn More ></a>
+                <a style="margin-right: 2.5rem;" href="Buy">Buy ></a>
+            </div>
+        </div>
+        <div class="homeSectionImageDiv"><img class="homeSectionImage" src="images/watch.png" alt=""></div>
     </section>
 
-    <%- include('card'); %>
+    <div class="row">
+            <% for (var i = 0; i <=cards.length - 1;  i++ ) { %>
+                <div class="col-6 nopadding">
+                    <%- include('card', {card: cards[i]}); %>
+                </div>
+            <% } %>
+    </div>
+    
+    
 
 
 </body>

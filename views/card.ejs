@@ -1,3 +1,11 @@
-<div class="card">
-    <h1></h1>
+<div class="cardCustom">
+    <div class="cardSectionTitle">
+        <h1><%= card.title %></h1>
+        <h3><%= card.subTitle %></h3>
+        <div class="cardSectionLinks">
+            <a style="margin-left: 2.5rem;" href="/iPhoneNormal">Learn More ></a>
+            <a style="margin-right: 2.5rem;" href="Buy">Buy ></a>
+        </div>
+    </div>
+    <div class="cardImageDiv"><img class="cardImage" src="<%= card.image %>" alt=""></div>
 </div>
