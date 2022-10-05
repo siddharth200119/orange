@@ -1,0 +1,8 @@
+.footer{
+    width: 50%;
+}
+
+.footerDiv{
+    display: flex;
+    justify-content:center;
+}
