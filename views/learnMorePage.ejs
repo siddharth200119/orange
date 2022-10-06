@@ -1,0 +1,43 @@
+<!-- header -->
+    
+<%- include('header', {navBarList: navBarList}); %>
+
+<div class="learnMorePageContainer">
+
+    <div class="imageTray">
+        <% for (var i = 0; i <=featureImages.length - 1;  i++ ) { %>
+            <a href="#<%= featureImages[i].name %>" class="imageTrayItem">
+                <img height="50px" width="50px" src="<%= featureImages[i].image %>">
+                <p><%= featureImages[i].title %></p>
+            </a>
+        <% } %>
+    </div>
+
+    <div class="ytVideoContainer">
+        <iframe class="ytVideo" width="1333" height="750" src="https://www.youtube.com/embed/FT3ODSg1GFE?playlist=FT3ODSg1GFE&loop=1&autoplay=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h6>All-new</h6>
+        <h1>oPhone 69 Pro</h1>
+        <h5>$6.9</h5>
+    </div>
+
+    <div class="featuresCards">
+        <% for (var i = 0; i <=featureImages.length - 1;  i++ ) { %>
+            <% if(i % 2 == 0){ %>
+                <div id="<%= featureImages[i].name %>" class="featuresCard Dark">
+                    <h1><%= featureImages[i].title %></h1>
+                    <img height="400" width="auto" src="<%= featureImages[i].cardImage %>">
+                    <p class="cardDescription"><%= featureImages[i].description %></p>
+                </div>
+            <% } else{ %>
+                <div id="<%= featureImages[i].name %>" class="featuresCard Light">
+                    <h1><%= featureImages[i].title %></h1>
+                    <img height="400" width="auto" src="<%= featureImages[i].cardImage %>">
+                    <p class="cardDescription"><%= featureImages[i].description %></p>
+                </div>
+            <% } %>
+        <% } %>
+    </div>
+
+</div>
+
+<%- include('footer') %>

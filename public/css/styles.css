@@ -120,6 +120,7 @@ body{
     position: absolute;
     color: #fbfbfd;
     font-family: 'Roboto', sans-serif;
+    width: 35%
 }
 
 .cardSectionTitle h1{

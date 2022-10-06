@@ -15,6 +15,11 @@
 .header a{
     margin: 0 1.5rem;
     text-decoration: none;
-    color: #fff;
+    color: #e8e7e6;
     font-family: 'Roboto', sans-serif;
+}
+
+.header a:hover{
+    color: #fbfbfd;
+    text-decoration: none;
 }

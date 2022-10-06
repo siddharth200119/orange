@@ -1,0 +1,96 @@
+.learnMorePageContainer{
+    margin-top: 4rem;
+}
+
+.ytVideoContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.ytVideoContainer h1{
+    position: absolute;
+    bottom: 28%;
+    font-size: 5rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ytVideoContainer h5{
+    position: absolute;
+    bottom: 25%;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ytVideoContainer h6{
+    font-weight: 700;
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 40%;
+    color: #00ff41;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ytVideo{
+    border-radius: 15px;
+}
+
+.imageTray{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35% 1rem 35%;
+}
+
+.imageTrayItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000;
+    transition: transform .2s
+}
+
+.imageTrayItem:hover{
+    color: black;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.featuresCards{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.featuresCard{
+    display: block;
+    margin:10px;
+    height: 750px;
+    width: 1333px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 1.5rem;
+    font-weight: 600;
+}
+
+.featuresCard img{
+    position: relative;
+    margin-top: 2rem
+}
+
+.Light{
+    color: black;
+    background-color: #fbfbfd;
+}
+
+.Dark{
+    color: white;
+    background-color: black;
+}
+
+.cardDescription{
+    padding: 2rem 25% 0 25%
+}
