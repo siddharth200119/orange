@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orange</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Titan+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body>
-
     <!-- header -->
     
     <%- include('header', {navBarList: navBarList}); %>
@@ -27,11 +9,11 @@
             <h1>oPhone 69 Pro</h1>
             <h3>Pro.Beyond</h3>
             <div class="homeProSectionLinks">
-                <a style="margin-left: 2.5rem;" href="/iPhonePro">Learn More ></a>
+                <a style="margin-left: 2.5rem;" href="/learnMore/oPhonePro">Learn More ></a>
                 <a style="margin-right: 2.5rem;" href="Buy">Buy ></a>
             </div>
         </div>
-        <div class="homeSectionImageDiv"><img class="homeSectionImage" src="images/iPhone-pro.png" alt=""></div>
+        <div class="homeSectionImageDiv"><img class="homeSectionImage" src="/images/iPhone-pro.png" alt=""></div>
     </section>
 
     <!-- normal iPhone section -->
@@ -41,11 +23,11 @@
             <h1>oPhone 69</h1>
             <h3>Bigger is Better</h3>
             <div class="homeNormalSectionLinks">
-                <a style="margin-left: 2.5rem;" href="/iPhoneNormal">Learn More ></a>
+                <a style="margin-left: 2.5rem;" href="/learnMore/oPhone">Learn More ></a>
                 <a style="margin-right: 2.5rem;" href="Buy">Buy ></a>
             </div>
         </div>
-        <div class="homeSectionImageDiv"><img class="homeSectionImage" src="images/iPhone-normal.png" alt=""></div>
+        <div class="homeSectionImageDiv"><img class="homeSectionImage" src="/images/iPhone-normal.png" alt=""></div>
     </section>
 
     <!-- Watch -->
@@ -59,7 +41,7 @@
                 <a style="margin-right: 2.5rem;" href="Buy">Buy ></a>
             </div>
         </div>
-        <div class="homeSectionImageDiv"><img class="homeSectionImage" src="images/watch.png" alt=""></div>
+        <div class="homeSectionImageDiv"><img class="homeSectionImage" src="/images/watch.png" alt=""></div>
     </section>
 
     <div class="row">
@@ -71,7 +53,3 @@
     </div>
     
     <%- include('footer') %>
-
-
-</body>
-</html>
