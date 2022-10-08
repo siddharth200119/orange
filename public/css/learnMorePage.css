@@ -38,7 +38,7 @@
 .imageTray{
     display: flex;
     justify-content: space-between;
-    padding: 0 35% 1rem 35%;
+    padding: 0 30% 1rem 30%;
 }
 
 .imageTrayItem{
@@ -48,7 +48,7 @@
     flex-direction: column;
     text-decoration: none;
     color: #000;
-    transition: transform .2s
+    transition: transform .2s;
 }
 
 .imageTrayItem:hover{
