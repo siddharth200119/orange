@@ -22,8 +22,8 @@
         <img>
     </a>
     <% for (var i = 0; i <=navBarList.length - 1;  i++ ) { %>
-        <a href="#">
-            <%- navBarList[i] %>
+        <a href="<%= navBarList[i].url %>">
+            <%- navBarList[i].name %>
         </a>
     <% } %>
     <a>
