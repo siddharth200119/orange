@@ -60,7 +60,7 @@ var cards = [
     }
 ];
 
-mongoose.connect('mongodb://localhost:27017/orangeDB');
+mongoose.connect('mongodb+srv://admin-sidd:sidd007jb@orange.ieugrdm.mongodb.net/orangeDB');
 const deviceSchema = mongoose.Schema({
     name: String,
     title: String,
@@ -76,46 +76,46 @@ const deviceSchema = mongoose.Schema({
   })
 
 const Device = mongoose.model('Device', deviceSchema);
-// const oPhonePro = new Device(
-//     {
-//         name: "homePod",
-//         title: "Home Pod",
-//         price: "$30",
-//         videoLink: "https://www.youtube.com/embed/VF-WANzs624?playlist=VF-WANzs624&loop=1&autoplay=1&mute=1&controls=0",
-//         features: [
-//             {
-//                 name: "siri",
-//                 title: "SIRI",
-//                 image: "/images/homePod/siri.png",
-//                 cardImage: "/images/homePod/siriCard.png",
-//                 description: "The Apple A15 Bionic is a System on a Chip (SoC) from Apple that is found in the iPhone 13 and iPad Mini (2021) models. It was announced late 2021 and offers 6 cores divided in 2 performance cores and four power efficiency cores. The CPU performance increases only slightly compared to the A14, but GPU (in the higher end models) offers higher gains."
-//             }, 
-//             {
-//                 name: "music",
-//                 title: "Music",
-//                 image: "/images/homePod/music.png",
-//                 cardImage: "/images/homePod/speakerCard.png",
-//                 description: "Face ID is a facial recognition system designed and developed by Apple Inc. for the iPhone and iPad Pro. The system allows biometric authentication for unlocking a device, making payments, accessing sensitive data, providing detailed facial expression tracking for Animoji, as well as six degrees of freedom (6DOF) head-tracking, eye-tracking, and other features."
-//             }, 
-//             {
-//                 name: "audio",
-//                 title: "360 degree Audio",
-//                 image: "/images/homePod/speaker.png",
-//                 cardImage: "/images/homePod/audioCard.png",
-//                 description: "Extreme dynamic range comes to the 12.9-inch iPad Pro. The Liquid Retina XDR display delivers true-to-life detail with a 1,000,000:1 contrast ratio, great for viewing and editing HDR photos and videos or enjoying your favorite movies and TV shows. It also features a breathtaking 1000 nits of full‑screen brightness and 1600 nits of peak brightness. And advanced display technologies like P3 wide color, True Tone, and ProMotion."
-//             },
-//             {
-//                 name: "ecosystem",
-//                 title: "Orange Ecosystem",
-//                 image: "/images/oPhone/ecosystem.png",
-//                 cardImage: "/images/oPhone/ecosystemCard.png",
-//                 description: "Apple Ecosystem is not an Apple Product, You could not go to Apple Store and “buy” the Apple Ecosystem, but it is a user and lifestyle experience which is a by-product of owning several Apple devices. Think of it, when you play your favorite role-playing game, you get character bonuses when you collect a rare set. The ecosystem is basically that. Special features that are available to your Apple devices that take your user experience to another level because of interaction between Apple devices."
-//             }
-//         ]
-//     }
-// )
+const oPhonePro = new Device(
+    {
+        name: "oPad",
+        title: "oPad",
+        price: "$69",
+        videoLink: "https://www.youtube.com/embed/VF-WANzs624?playlist=VF-WANzs624&loop=1&autoplay=1&mute=1&controls=0",
+        features: [
+            {
+                name: "A15",
+                title: "A15 Chip",
+                image: "/images/oPhone/A15.png",
+                cardImage: "/images/oPhone/A15Card.png",
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+            }, 
+            {
+                name: "faceID",
+                title: "Face ID",
+                image: "/images/oPhone/faceID.png",
+                cardImage: "/images/oPhone/faceIDCard.png",
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+            }, 
+            {
+                name: "screen",
+                title: "Big Screen",
+                image: "/images/oPad/screen.png",
+                cardImage: "/images/oPad/screenCard.png",
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+            },
+            {
+                name: "ecosystem",
+                title: "Orange Ecosystem",
+                image: "/images/oPhone/ecosystem.png",
+                cardImage: "/images/oPhone/ecosystemCard.png",
+                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+            }
+        ]
+    }
+)
 
-// oPhonePro.save();
+oPhonePro.save();
 
 
 const app = express();
