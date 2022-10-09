@@ -76,46 +76,46 @@ const deviceSchema = mongoose.Schema({
   })
 
 const Device = mongoose.model('Device', deviceSchema);
-const oPhonePro = new Device(
-    {
-        name: "oPad",
-        title: "oPad",
-        price: "$69",
-        videoLink: "https://www.youtube.com/embed/VF-WANzs624?playlist=VF-WANzs624&loop=1&autoplay=1&mute=1&controls=0",
-        features: [
-            {
-                name: "A15",
-                title: "A15 Chip",
-                image: "/images/oPhone/A15.png",
-                cardImage: "/images/oPhone/A15Card.png",
-                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-            }, 
-            {
-                name: "faceID",
-                title: "Face ID",
-                image: "/images/oPhone/faceID.png",
-                cardImage: "/images/oPhone/faceIDCard.png",
-                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-            }, 
-            {
-                name: "screen",
-                title: "Big Screen",
-                image: "/images/oPad/screen.png",
-                cardImage: "/images/oPad/screenCard.png",
-                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-            },
-            {
-                name: "ecosystem",
-                title: "Orange Ecosystem",
-                image: "/images/oPhone/ecosystem.png",
-                cardImage: "/images/oPhone/ecosystemCard.png",
-                description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-            }
-        ]
-    }
-)
+// const oPhonePro = new Device(
+//     {
+//         name: "oPad",
+//         title: "oPad",
+//         price: "$69",
+//         videoLink: "https://www.youtube.com/embed/VF-WANzs624?playlist=VF-WANzs624&loop=1&autoplay=1&mute=1&controls=0",
+//         features: [
+//             {
+//                 name: "A15",
+//                 title: "A15 Chip",
+//                 image: "/images/oPhone/A15.png",
+//                 cardImage: "/images/oPhone/A15Card.png",
+//                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+//             }, 
+//             {
+//                 name: "faceID",
+//                 title: "Face ID",
+//                 image: "/images/oPhone/faceID.png",
+//                 cardImage: "/images/oPhone/faceIDCard.png",
+//                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+//             }, 
+//             {
+//                 name: "screen",
+//                 title: "Big Screen",
+//                 image: "/images/oPad/screen.png",
+//                 cardImage: "/images/oPad/screenCard.png",
+//                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+//             },
+//             {
+//                 name: "ecosystem",
+//                 title: "Orange Ecosystem",
+//                 image: "/images/oPhone/ecosystem.png",
+//                 cardImage: "/images/oPhone/ecosystemCard.png",
+//                 description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+//             }
+//         ]
+//     }
+// )
 
-oPhonePro.save();
+// oPhonePro.save();
 
 
 const app = express();
@@ -128,7 +128,12 @@ app.get("/", function(req, res){
     res.render("home", {navBarList: navBarList, cards: cards});
 })
 
-app.listen("3000", function () {
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+
+app.listen(port, function () {
     console.log("server started at port 3000");
 })
 
