@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const path = require('path');
 
 var navBarList = [
     {
@@ -122,6 +123,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));
+app.set('views', path.join(__dirname, '/views'));
 
 app.get("/", function(req, res){
     res.render("home", {navBarList: navBarList, cards: cards});
@@ -129,7 +131,7 @@ app.get("/", function(req, res){
 
 let port = process.env.PORT;
 if (port == null || port == "") {
-  port = 8000;
+  port = 3000;
 }
 
 app.listen(port, function () {
@@ -140,9 +142,9 @@ app.get("/learnMore/:device", function(req, res){
     const reqName = req.params.device;
     Device.findOne({name: reqName}, function(err, result){
         if(err){
-            res.redirect("/ ")
+            res.redirect("/")
         }else{
-            res.render("LearnMorePage", {navBarList: navBarList, learnMore: result});
+            res.render("learnMorePage", {navBarList: navBarList, learnMore: result});
         }
     })
 })

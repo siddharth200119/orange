@@ -23,3 +23,54 @@
     color: #fbfbfd;
     text-decoration: none;
 }
+
+.navbar-custom {
+    background-color: black;
+    backdrop-filter: blur(50px);
+    opacity: 0.8;
+    height: 5vh
+}
+
+.navbar-link{
+    transition: transform .2s;
+}
+
+.navbar-link:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 480px) {
+    .header{
+        position: fixed;
+        top: 0;
+        background-color: black;
+        backdrop-filter: blur(50px);
+        width: 100vw;
+        height: 8vh;
+        opacity: 0.8;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        z-index: 500;
+        transition: all;
+    }
+
+    .navbar-custom {
+        background-color: black;
+        backdrop-filter: blur(50px);
+        opacity: 0.8;
+        height: 6.5vh
+    }
+
+    .clicked{
+        height: 50vh;
+    }
+    
+    .header a{
+        margin: 0 1.5rem;
+        text-decoration: none;
+        color: #e8e7e6;
+        font-family: 'Roboto', sans-serif;
+    }
+}

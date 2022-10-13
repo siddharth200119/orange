@@ -41,12 +41,12 @@
                 <a style="margin-right: 2.5rem;" href="Buy">Buy ></a>
             </div>
         </div>
-        <div class="homeSectionImageDiv"><img class="homeSectionImage" src="/images/watch.png" alt=""></div>
+        <div class="homeSectionImageDiv"><img class="homeSectionImage watch" src="/images/Watch.png" alt=""></div>
     </section>
 
     <div class="row">
             <% for (var i = 0; i <=cards.length - 1;  i++ ) { %>
-                <div class="col-6 nopadding">
+                <div class="col-lg-6 col-sm-12 sol-md-6 nopadding">
                     <%- include('card', {card: cards[i]}); %>
                 </div>
             <% } %>

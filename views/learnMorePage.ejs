@@ -7,14 +7,14 @@
     <div class="imageTray">
         <% for (var i = 0; i <=learnMore.features.length - 1;  i++ ) { %>
             <a href="#<%= learnMore.features[i].name %>" class="imageTrayItem">
-                <img height="50px" width="50px" src="<%= learnMore.features[i].image %>">
+                <img class="trayImage" src="<%= learnMore.features[i].image %>">
                 <p><%= learnMore.features[i].title %></p>
             </a>
         <% } %>
     </div>
 
     <div class="ytVideoContainer">
-        <iframe class="ytVideo" width="1333" height="750" src="<%= learnMore.videoLink %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="ytVideo" src="<%= learnMore.videoLink %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h6>All-new</h6>
         <h1><%= learnMore.title %></h1>
         <h5><%= learnMore.price %></h5>
@@ -25,13 +25,13 @@
             <% if(i % 2 == 0){ %>
                 <div id="<%= learnMore.features[i].name %>" class="featuresCard Dark">
                     <h1><%= learnMore.features[i].title %></h1>
-                    <img height="400" width="auto" src="<%= learnMore.features[i].cardImage %>">
+                    <img src="<%= learnMore.features[i].cardImage %>">
                     <p class="cardDescription"><%= learnMore.features[i].description %></p>
                 </div>
             <% } else{ %>
                 <div id="<%= learnMore.features[i].name %>" class="featuresCard Light">
                     <h1><%= learnMore.features[i].title %></h1>
-                    <img height="400" width="auto" src="<%= learnMore.features[i].cardImage %>">
+                    <img src="<%= learnMore.features[i].cardImage %>">
                     <p class="cardDescription"><%= learnMore.features[i].description %></p>
                 </div>
             <% } %>
